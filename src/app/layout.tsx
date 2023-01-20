@@ -1,4 +1,6 @@
-import './globals.css'
+import './globals.css';
+import TitlePage from './components/judul';
+import FormInput from './components/form'
 
 export default function RootLayout({
   children,
@@ -12,7 +14,13 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+      <body className='w-full bg-blue-500 p-4'>
+       <main className='w-3/6 bg-white mx-auto p-4'>
+        <TitlePage />
+        <FormInput />
+
+       </main>
+        </body>
     </html>
   )
 }
