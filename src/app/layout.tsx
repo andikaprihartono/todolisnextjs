@@ -1,6 +1,7 @@
 import './globals.css';
 import TitlePage from './components/judul';
-import FormInput from './components/form'
+import FormInput from './components/form';
+import ListItem from './components/list';
 
 export default function RootLayout({
   children,
@@ -18,6 +19,7 @@ export default function RootLayout({
        <main className='w-3/6 bg-white mx-auto p-4'>
         <TitlePage />
         <FormInput />
+        <ListItem />
 
        </main>
         </body>
